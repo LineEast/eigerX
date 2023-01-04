@@ -4,7 +4,7 @@ import ()
 
 type ()
 
-func PriceCheck(products []string, productPrices []float64, productSold []string, soldPrice []float64) (errNum int) {
+func PriceCheckMap(products []string, productPrices []float64, productSold []string, soldPrice []float64) (errNum int) {
 	// ====
 	if len(products) != len(productPrices) {
 		// should be checked, but it does not ask in the conditions
@@ -32,5 +32,22 @@ func PriceCheck(products []string, productPrices []float64, productSold []string
 		}
 	}
 
+	return
+}
+
+func PriceCheckArray(products []string, productPrices []float64, productSold []string, soldPrice []float64) (errNum int) {
+	if len(products) != len(productSold) {
+		// 
+	}
+
+	for i := range products {
+		for y := range productSold {
+			if products[i] == productSold[y] {
+				if productPrices[i] != soldPrice[y] {
+					errNum++
+				}
+			}
+		}
+	}
 	return
 }

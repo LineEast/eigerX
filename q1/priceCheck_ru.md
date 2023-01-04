@@ -3,8 +3,11 @@
 ### Пример
 
 products = ['eggs', 'milk', 'cheese']
+
 productPrices = [2.89, 3.29, 5.79]
+
 productSold = ['eggs', 'eggs', 'cheese', 'milk']
+
 soldPrice = [2.89, 2.99, 5.97, 3.29]
 
 | Sold Product | Sold Price	| Expected Price | Error |

@@ -1,5 +1,3 @@
-Given 2 tables in a database (MySQL / PostgreSQL), Employee and Department, generate a summary of the # of employees in each department. List each department, even if it has no employees. Sort the results from high to low by number of employees, and then alphabetically by department if departments have the same number of employees. The results should list 1: department name and 2: employee count in appropriate column names.
-
 Даны 2 таблицы в базе данных (MySQL / PostgreSQL):
 - Eployee
 - Department

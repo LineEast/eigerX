@@ -21,8 +21,9 @@ create table employee (
 -- Перечислить каждый отдел, даже если никого нет
 -- Отсортировать по алфовитному и по кол-ву  сотров, если кол-во сотров совпадает
 
-select department.name, count(employee.ID) as count
+select 
+	department.name as department_name, count(employee.ID) as employee_count
 from department left join employee
 on department.ID = employee.dept_id
 group by department.ID, department.name
-order by count desc, department.name;
+order by employee_count desc, department_name;
